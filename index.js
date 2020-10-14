@@ -16,11 +16,11 @@ options = {
 
 // Production environment
 // options = {
-//     host: 'q3vtafztappqbpzn.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//     user: 'btgq2cwm7jwd09eh',
-//     password: 'ufebnwn0llmnqdn4',
+//     host: 'ijj1btjwrd3b7932.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+//     user: 'r1bagvrpqtej143l',
+//     password: 'if06z8l957g3svh8',
 //     port: '3306',
-//     database: 'theubube2p3ndxbm'
+//     database: 'ft4lvci7iqqd1wgu'
 // }
 
 
