@@ -6,22 +6,22 @@ const cors = require('cors')
 const myData = require('./data')
 
 // Development environment
-options = {
-    host: 'localhost',
-    user: 'root',
-    password: '604030',
-    port: '3306',
-    database: 'project'
-}
+// options = {
+//     host: 'localhost',
+//     user: 'root',
+//     password: '604030',
+//     port: '3306',
+//     database: 'project'
+// }
 
 // Production environment
-// options = {
-//     host: 'ijj1btjwrd3b7932.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-//     user: 'r1bagvrpqtej143l',
-//     password: 'if06z8l957g3svh8',
-//     port: '3306',
-//     database: 'ft4lvci7iqqd1wgu'
-// }
+options = {
+    host: 'ijj1btjwrd3b7932.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
+    user: 'r1bagvrpqtej143l',
+    password: 'if06z8l957g3svh8',
+    port: '3306',
+    database: 'ft4lvci7iqqd1wgu'
+}
 
 
 let connection = mysql.createConnection(options)
@@ -103,6 +103,6 @@ app.post('/newemployee', (req, res) => {
     })
 })
 
-app.listen( '5050', () => {
+app.listen(process.env.PORT || '5050', () => {
     console.log('I am listening 5050 port...')
 })
