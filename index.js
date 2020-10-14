@@ -103,6 +103,6 @@ app.post('/newemployee', (req, res) => {
     })
 })
 
-app.listen(process.env.PORT || '5050', () => {
+app.listen( '5050', () => {
     console.log('I am listening 5050 port...')
 })
